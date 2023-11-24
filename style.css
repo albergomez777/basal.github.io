@@ -3,10 +3,12 @@ H1{
 }
 
 body {
+    background-image: url(calculadora.jpg);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #contenedor{
+   
     border-radius: 20px;
     background:rgb(110, 109, 200);
     width: 900px;
@@ -16,6 +18,7 @@ body {
     position: absolute;
     inset: 0;
     margin: auto;
+    border-style:groove
 }
     #calculadora{
         background:rgb(27, 26, 33);
@@ -28,11 +31,16 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
     background: #f380e1;
-    inset: ;
+    inset: 0;
     margin: auto;
     width: 65%;
     height: 35%;
-    color: rgb(9, 9, 9);}
+    color: rgb(9, 9, 9);
+    padding: 2%;
+
+    border-style:double
+    
+}
     /*borrar si no anda */
  contenido{
     
@@ -47,30 +55,63 @@ input {
 	width: 30%;
     padding: 12px 15px;
     border-radius: 5px;
-    background-color: #eee;
+    background-color: #efeaea;
 }
 /*boton calcular*/
 button {
-    font-size: 15px;
+    
+      font-size: 15px;
       font-weight: bold;
       padding: 12px 45px;
       border-radius: 10px;
       background-color: #f30943;
-      border: p solid #0d0c0c;
       color: #FFFFFF;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: transform 26ms ease-in;
-     
+      border-style:groove
+        
     
   }
 
 button:active {
 	transform: scale(1.09);
 }
-.advertencia{
-    background: #f30943;
-}
-.CLICK{
-    background-color: #f30943;
-}
+
+.text {
+    font-size:28px;
+    font-family:helvetica;
+    font-weight:bold;
+    color:rgb(250, 246, 246);
+    text-transform:uppercase;
+  }
+  .parpadea {
+    
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
+  }
