@@ -1,20 +1,76 @@
 H1{
-    color: blue
+    color: rgb(0, 0, 0)
 }
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-    
-    
-
-div
-    background-color: rgb(13, 118, 118)
-  
-    height: 50vh;
+#contenedor{
+    border-radius: 20px;
+    background:rgb(110, 109, 200);
+    width: 900px;
+    height: 450px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
     position: absolute;
-    inset:0 ;
+    inset: 0;
     margin: auto;
-   
+}
+    #calculadora{
+        background:rgb(27, 26, 33);
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    /*como se calcula*/
+#detalle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background: #f380e1;
+    inset: ;
+    margin: auto;
+    width: 65%;
+    height: 35%;
+    color: rgb(9, 9, 9);}
+    /*borrar si no anda */
+ contenido{
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+/*modifica la barra de peso */
+input {
+	width: 30%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+/*boton calcular*/
+button {
+    font-size: 15px;
+      font-weight: bold;
+      padding: 12px 45px;
+      border-radius: 10px;
+      background-color: #f30943;
+      border: p solid #0d0c0c;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: transform 26ms ease-in;
+     
+    
+  }
+
+button:active {
+	transform: scale(1.09);
+}
+.advertencia{
+    background: #f30943;
+}
+.CLICK{
+    background-color: #f30943;
+}

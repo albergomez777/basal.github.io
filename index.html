@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+  <head> 
      <title>Calculadora de hidratación </title>
      <link rel="stylesheet" href="./style.css"/>
-    </head>
+     <script src="script.js"></script>
+  </head>
 
-    <body>
-      <div id="contenedor"> 
-            <div>
-                <h1>Hidratacion basal</h1>
+  <body>
+   <div id="contenedor"> 
+          <div id="Calculadora">
+            <div class="contenido">
+              <h1>Hidratacion Basal</h1>
               <p>Datos del paciente</p>
-             <!--comentario-->
-             <input type="number" placeholder="peso en kg"/> 
-                 <button> CALCULAR</button>
-                 <p>volumen por hora = 71cc</p>
-                 <p>m+m/2 = 105cc por hora</p>
+              <!--comentario-->
+              <input type="number" placeholder="Peso en kg"/> 
+              <p > ↓ CLICK ↓</p>
+               
+              <button> CALCULAR</button>
+              <p>volumen por hora = 71cc</p>
+              <p>m+m/2 = 105cc por hora</p>
             </div>
-          
-            <div>
+         </div>
+          <div id="detalle">
+            <div class="contenido">
              <h1>¿Como se calcula?</h1>
              <ul>
                <li>0 a 10 kg las necesidades diarias son de 100cc x kg. </li>
-               <li>De 11 a 20 kg las necesidades diarias son de 1000cc + 50cc por cada kg encima de 10    </li>
+               <li>De 11 a 20 kg las necesidades diarias son de 1000cc + 50cc por cada kg encima de 10.    </li>
                <Li>De 20kg para arriba suman 1500cc + 20cc por cada kg encima de 20. </Li>
              </ul>
             </div>
         </div>
-       
-    </body>
- </html>
+    </div>
+  </body>
+</html>
