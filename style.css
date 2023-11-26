@@ -1,88 +1,75 @@
-H1{
-    color: rgb(0, 0, 0)
-}
 
 body {
+  
     background-image: url(calculadora.jpg);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #contenedor{
    
-    border-radius: 20px;
+    border-radius: 9px;
     background:rgb(110, 109, 200);
-    width: 900px;
+    width: 1000px;
     height: 450px;
     text-align: center;
-    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
     position: absolute;
-    inset: 0;
-    margin: auto;
+    left: 18%;
+    top: 15%;
     border-style:groove
 }
-    #calculadora{
-        background:rgb(27, 26, 33);
-        width: 50%;
-        height: 100%;
-        float: left;
-    }
     /*como se calcula*/
+    .imagen{
+      position: absolute;
+      left: 6%;
+      top: 78%;
+      display: flex;
+      width: 10%     
+    }
+
 #detalle{
+  /*como se calcula*/
+  position: absolute;
+  left: 16%;
+  top: 80%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
-    background: #f380e1;
-    inset: 0;
-    margin: auto;
+    background: #f380e1;   
     width: 65%;
-    height: 35%;
-    color: rgb(9, 9, 9);
-    padding: 2%;
-
-    border-style:double
-    
-}
-    /*borrar si no anda */
- contenido{
-    
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    overflow: hidden;
-    padding: 40px;
+    height: 40%;
+    color: rgb(10, 9, 9);
+    padding: 0%;
+    border-style:solid    
 }
 /*modifica la barra de peso */
 input {
-	width: 30%;
+	width: 24%;
     padding: 12px 15px;
     border-radius: 5px;
-    background-color: #efeaea;
+    background-color: #f3f0f0;    
 }
 /*boton calcular*/
-button {
-    
-      font-size: 15px;
+button { 
+position: absolute;
+left: 65%;
+top: 30%;
+      font-size: 1px;
       font-weight: bold;
-      padding: 12px 45px;
-      border-radius: 10px;
-      background-color: #f30943;
-      color: #FFFFFF;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: transform 26ms ease-in;
-      border-style:groove
-        
-    
+      padding: 5px 11px;
+      border-radius:4px;
+       background-color:rgb(229, 181, 5);
+       color: #f1eaea;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       transition: transform 26ms ease-in;              
   }
-
 button:active {
 	transform: scale(1.09);
 }
-
 .text {
     font-size:28px;
     font-family:helvetica;
     font-weight:bold;
-    color:rgb(250, 246, 246);
+    color:rgb(9, 7, 7);
     text-transform:uppercase;
   }
   .parpadea {
@@ -93,25 +80,23 @@ button:active {
     animation-iteration-count: infinite;
   
     -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
   }
-  
   @-moz-keyframes parpadeo{  
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
     100% { opacity: 1.0; }
   }
-  
   @-webkit-keyframes parpadeo {  
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
      100% { opacity: 1.0; }
   }
-  
   @keyframes parpadeo {  
     0% { opacity: 1.0; }
      50% { opacity: 0.2; }
     100% { opacity: 1.0; }
   }
+ 
