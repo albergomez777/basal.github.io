@@ -1,12 +1,9 @@
 
-body {
-  
+body { 
     background-image: url(calculadora.jpg);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 #contenedor{
-   
     border-radius: 9px;
     background:rgb(110, 109, 200);
     width: 1000px;
@@ -17,7 +14,7 @@ body {
     top: 15%;
     border-style:groove
 }
-    /*como se calcula*/
+  /*como se calcula*/
     .imagen{
       position: absolute;
       left: 6%;
@@ -25,11 +22,9 @@ body {
       display: flex;
       width: 10%     
     }
-
 #detalle{
-  /*como se calcula*/
   position: absolute;
-  left: 16%;
+  left: 17%;
   top: 80%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
@@ -40,14 +35,13 @@ body {
     padding: 0%;
     border-style:solid    
 }
-/*modifica la barra de peso */
+/* barra de peso */
 input {
 	width: 24%;
     padding: 12px 15px;
     border-radius: 5px;
     background-color: #f3f0f0;    
 }
-/*boton calcular*/
 button { 
 position: absolute;
 left: 65%;
@@ -72,8 +66,7 @@ button:active {
     color:rgb(9, 7, 7);
     text-transform:uppercase;
   }
-  .parpadea {
-    
+  .parpadea { 
     animation-name: parpadeo;
     animation-duration: 1s;
     animation-timing-function: linear;

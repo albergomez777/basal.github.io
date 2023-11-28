@@ -3,34 +3,30 @@
   <head> 
      <title>Calculadora de hidratación </title>
      <link rel="stylesheet" href="./style.css"/>
-     <script src="script.js"></script>
+     <script src="script.js"defer></script>
   </head>
-
   <body>
-   
    <div id="contenedor"> 
-          <div id="Calculadora">
+          <div id="calculadora">
             <div class="foto">
               <img class="imagen"src="niño.png" alt="">
                </div>   
             <div class="contenido">
               <h1 style="font-size: 40px;">Hidratacion Basal</h1>
-              <p>Datos del paciente</p>
+              <p>Escriba el peso del paciente</p>
               <!--comentario-->
-              <input type="number" placeholder="Peso en kg"/> 
+              <input id="peso" type="number" placeholder="Peso en kg"/> 
               <div id="alerta">     
             </div>
-              <button> 
-                <span class="parpadea text"><strong>CALCULAR</strong>
+              <button id=" calcular"> 
+                <span id= "calcular" class="parpadea text"><strong>CALCULAR</strong>
               </button>
-              <p>volumen por hora = 71cc</p>
-              <p>m+m/2 = 105cc por hora</p>
+              <p class="volumen" id="volumen">volumen por hora = 71cc</p>
+              <p class="mante"id="mante">m+m/2 = 105cc por hora</p>
             </div>
          </div>
           <div id="detalle">
-            <div class="contenido">
-
-                                                                   
+            <div class="contenido">                                                            
             
              <h1>¿Como se calcula?</h1>
              
