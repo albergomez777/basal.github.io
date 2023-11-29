@@ -12,17 +12,14 @@ body {
     position: absolute;
     left: 18%;
     top: 15%;
-    border-style:groove
-  
-    
+    border-style:groove 
 }
-  /*como se calcula*/
     .imagen{
       position: absolute;
-      left: 6%;
-      top: 78%;
+      left: 4%;
+      top: 69%;
       display: flex;
-      width: 10%     
+      width: 14%     
     }
 #detalle{
   position: absolute;
@@ -37,7 +34,6 @@ body {
     padding: 0%;
     border-style:solid    
 }
-/* barra de peso */
 input {
 	width: 24%;
     padding: 12px 15px;
