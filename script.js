@@ -11,7 +11,7 @@ function eventoboton() {
         VOL.innerHTML= volumen/24 + "cc/hr";
     
         VOL.style.display= "block";
-        MAN.innerHTML=volumen / 24 1.5 +"cc/m+m/2";
+        MAN.innerHTML=volumen / 24 *1.5 +"cc/m+m/2";
         MAN.style.display="block";
     }else{
         volumen=superficiecorporal(peso);
